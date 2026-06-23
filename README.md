@@ -16,7 +16,7 @@ It supports private messaging between users and room-based communication using W
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**
 
@@ -47,17 +47,32 @@ backend/
 
 ### 1. Clone the repository
 
-```bash
-git clone <your-repo-url>
 2. Backend Setup
+
+Navigate to the backend directory and install dependencies:
+
+```bash
 cd backend
 npm install
 node server.js
+```
 
+The backend server will run at:
+
+http://localhost:3002
+
+Make sure the backend is running before starting the frontend.
 
 3. Frontend Setup
+
+Navigate to the frontend project directory and install dependencies:
+
+```bash
 cd frontend/socket-app
 npm install
 npm run dev
-
 ```
+
+The development server will run at a local Vite port (default is):
+
+http://localhost:5173
