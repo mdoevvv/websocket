@@ -25,6 +25,14 @@ io.on("connection", (socket) => {
   socket.on("send-msg", (data) => {
     socket.to(data.id).emit("personal-msg", data.msg);
   });
+
+  socket.on("join-room", (room) => {
+    socket.join(room);
+  });
+
+  socket.on("disconnect", () => {
+    console.log("USER DISCONNECTED");
+  });
 });
 
 server.listen(PORT, () => {
